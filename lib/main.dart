@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_tut/counter_controller.dart';
-import 'package:flutter_getx_tut/home.dart';
+import 'package:flutter_getx_tut/controllers/album_controller.dart';
+import 'package:flutter_getx_tut/controllers/counter_controller.dart';
+import 'package:flutter_getx_tut/views/pages/album_page.dart';
+import 'package:flutter_getx_tut/views/pages/home.dart';
 import 'package:get/instance_manager.dart';
 
 void main() {
@@ -13,7 +15,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    //
     Get.put(CounterController());
+    Get.put(AlbumController());
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -21,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: AlbumPage(),
     );
   }
 }

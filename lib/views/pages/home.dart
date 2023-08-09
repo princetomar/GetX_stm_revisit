@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_tut/counter_controller.dart';
+import 'package:flutter_getx_tut/controllers/counter_controller.dart';
 import 'package:get/get.dart';
 import 'package:get/instance_manager.dart';
 
